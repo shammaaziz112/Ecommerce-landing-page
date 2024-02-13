@@ -12,62 +12,112 @@
     <title>Beauty Bliss</title>
   </head>
   <body>
+    <span><img src="./src/img/logo.png" alt="" height="120px" /></span>
+    <nav>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Reviews">Reviews</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <header class="header">
-      <img src="./src/img/logo.png" alt="" height="120px" />
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Contact</li>
-          <li>About</li>
-        </ul>
-      </nav>
+      <section class="hero-Section">
+        <div class="hero-Div">
+          <h1 style="font-family: 'Genty Demo', sans-serif">
+            Bring back the beauty and glow of your skin
+          </h1>
+          <p>
+            We provide you various treatments from head to toe using the best
+            product, advanced technology, and affordable
+          </p>
+          <button><b>SHOP</b></button>
+        </div>
+      </section>
     </header>
+    <hr />
     <main>
-      <div class="hero-Section">
-        <h1 style="font-family: 'Genty Demo', sans-serif">
-          Bring back the beauty and glow of your skin
-        </h1>
-        <p>
-          We provide you various treatments from head to toe using the best
-          product, advanced technology, and affordable
-        </p>
-        <button>shop</button>
-      </div>
-
-      <hr />
-
-      <section class="product">
+      <section id="Home">
         <h2>product</h2>
 
         <div>
-          <img
-            src="./src/img/Anua_HeartleafSoothingToner_5.jpg.webp"
-            alt=""
-            height="200px"
-          />
-          <p><b>Heartleaf 77% Soothing Toner</b></p>
-          <p>
-            77% Korean-grown Heartleaf extract calms sensitive skin, while pH
-            balancing and hydrating. Anua's Heartleaf 77% Soothing Toner is
-            lightweight, ultra-soothing, and free of fillers or harmful
-            chemicals. Non-comedogenic, it's safe for acne-prone skin.
-          </p>
-        </div>
-
-        <div>
-          <img
-            src="./src/img/Anua_PoreCleansingOil_5_1080x.jpg.webp"
-            alt=""
-            height="200px"
-          />
-          <p><b>Heartleaf Pore Control Cleansing Oil</b></p>
-          <p>
-            Anua’s Heartleaf Pore Control Cleansing Oil removes impurities and
-            provides hydrating relief to acne-prone skin. Heartleaf extract
-            helps soothe and prevent irritation for cleansed, clear skin.
-          </p>
+          <div>
+            <img
+              src="./src/img/Anua_HeartleafSoothingToner_5.jpg.webp"
+              alt=""
+              height="200px"
+            />
+            <p><b>Heartleaf 77% Soothing Toner</b></p>
+            <p>
+              77% Korean-grown Heartleaf extract calms sensitive skin, while pH
+              balancing and hydrating. Anua's Heartleaf 77% Soothing Toner is
+              lightweight, ultra-soothing, and free of fillers or harmful
+              chemicals. Non-comedogenic, it's safe for acne-prone skin.
+            </p>
+            <button>ADD TO CART</button>
+          </div>
+          <div>
+            <img
+              src="./src/img/Anua_PoreCleansingOil_5_1080x.jpg.webp"
+              alt=""
+              height="200px"
+            />
+            <p><b>Heartleaf Pore Control Cleansing Oil</b></p>
+            <p>
+              Anua’s Heartleaf Pore Control Cleansing Oil removes impurities and
+              provides hydrating relief to acne-prone skin. Heartleaf extract
+              helps soothe and prevent irritation for cleansed, clear skin.
+            </p>
+            <button>ADD TO CART</button>
+          </div>
         </div>
       </section>
+
+      <section id="Reviews">
+        <h2>Reviews</h2>
+        <div>
+          <div>
+            <h3>Omnia</h3>
+            <p>
+              It felt so good like this was my first time using an Oil cleanser
+              and just perfect 10/10.
+            </p>
+          </div>
+          <div>
+            <h3>Raghad</h3>
+            <p>This toner has calmed my redness and my skin isn’t as dull.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="Newsletter">
+        <form>
+          <label for="newsletter">Newsletter</label>
+          <input type="email" id="newsletter" name="newsletter" />
+
+          <button type="submit">Subscription</button>
+        </form>
+      </section>
     </main>
+
+    <footer>
+      <section id="About">
+        <h4>About</h4>
+        <p>
+          Beauty Bliss is proud to offer a range of independent, and
+          results-driven brands that prioritize clean, organic, and
+          vegan-friendly <br />
+          formulations using safe and effective ingredients. We hold ourselves
+          to high standards of skincare, and believe that extends to the
+          environment around us. Welcome!
+        </p>
+      </section>
+
+      <section id="Contact">
+        <h4>Contact</h4>
+        <p>Please email us at hello@ohlolly.com for questions or comments</p>
+      </section>
+    </footer>
   </body>
 </html>
