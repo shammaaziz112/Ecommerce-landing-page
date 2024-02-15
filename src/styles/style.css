@@ -7,6 +7,8 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Background Color*/
+
 body {
   background: linear-gradient(
     245.59deg,
@@ -15,6 +17,8 @@ body {
     #dd748d 75.52%
   );
 }
+
+/* Navigation Bar Style */
 
 nav {
   position: fixed;
@@ -50,6 +54,7 @@ nav {
   border-bottom: 2px solid white;
 }
 
+/* Hero Section */
 .hero-Section {
   height: 100%;
   width: 100%;
@@ -93,6 +98,7 @@ nav {
   background: transparent;
   border: 1px solid white;
   transition: all 0.55s;
+  box-shadow: 0 1px 5px;
 }
 .hero-Div a {
   color: white;
@@ -110,6 +116,8 @@ nav {
   transition: all 0.55s;
 }
 
+/* headers */
+
 #product,
 #reviews,
 #newsletter {
@@ -118,6 +126,10 @@ nav {
   font-family: 'Genty Demo', sans-serif;
   font-size: 3rem;
 }
+
+/* Card Container Style */
+/* Product */
+
 .card-Container {
   margin-top: 2%;
   display: flex;
@@ -126,26 +138,25 @@ nav {
   justify-content: center;
 }
 
-.card-Container .card {
+.card-Container .card-Product {
   display: flex;
   flex-direction: column;
   background-color: white;
   margin: 0 10px;
   padding: 0 15px;
   border-radius: 1.5rem;
-  font-size: 10px;
-  width: 20em;
+  font-size: 12px;
+  width: 23em;
   align-items: center;
+  box-shadow: 0 5px 10px;
 }
 
-.card-Container .card img {
+.card-Container .card-Product img {
   padding: 0;
   margin: 0 0 15px 0;
-}
-
-.card-Container .card .card-Img {
-  padding: 0;
-  margin: 0 0 15px 0;
+  height: 15em;
+  /* width: 15em; */
+  border-radius: 20px;
 }
 
 .card-Container button {
@@ -157,7 +168,7 @@ nav {
   color: #dd748d;
   padding: 10px 20px;
   line-height: 1.4;
-  font-size: 7px;
+  font-size: 9px;
   font-weight: 600;
   border-radius: 30px;
   transition: all 0.55s;
@@ -170,12 +181,29 @@ nav {
   transform: translateX(8px);
 }
 
-.card-Container img {
-  height: 15em;
-  width: 15em;
-  margin-bottom: 1em;
-  border-radius: 20px;
+/* Card Container Style */
+/* Reviews */
+
+.card-Container .card-Reviews {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 0 10px;
+  padding: 0 15px;
+  border-radius: 1rem;
+  font-size: 12px;
+  width: 23em;
+  align-items: center;
+  box-shadow: 0 5px 10px;
 }
+
+.card-Container .card-Reviews img {
+  height: 2em;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+/* Newsletter Style */
 
 .newsletter-Section {
   text-align: center;
@@ -209,6 +237,7 @@ nav {
   transition: all 0.55s;
 }
 
+/* Footer Style */
 footer {
   background-color: rgb(225, 159, 174, 0.6);
   color: white;
@@ -217,10 +246,11 @@ footer {
 #about h4,
 #contact h4 {
   padding: 1%;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 #about p,
 #contact p {
   padding-left: 2%;
+  font-size: 0.7rem;
 }
