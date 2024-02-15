@@ -20,7 +20,7 @@ body {
 
 /* Navigation Bar Style */
 
-nav {
+.navigation {
   position: fixed;
   right: 0;
   top: 0;
@@ -33,15 +33,15 @@ nav {
   background-color: rgb(225, 159, 174, 0.6);
 }
 
-.logo {
+.navigation--logo {
   margin: -40px;
 }
 
-.navlist {
+.navigation--list {
   display: flex;
 }
 
-.navlist a {
+.navigation--list a {
   color: white;
   margin-left: 60px;
   font-size: 15px;
@@ -50,8 +50,8 @@ nav {
   transition: all 0.55s ease;
 }
 
-.navlist a:hover {
-  border-bottom: 2px solid white;
+.navigation--list a:hover {
+  text-decoration: underline;
 }
 
 /* Hero Section */
@@ -85,30 +85,14 @@ nav {
   padding: 0 10%;
 }
 
-.hero-Div button {
+.btn--hero {
   margin: 0 40%;
-  display: inline-block;
   text-decoration: none;
-  color: white;
   padding: 12px 30px;
-  line-height: 1.4;
   font-size: 16px;
-  font-weight: 500;
-  border-radius: 30px;
-  background: transparent;
-  border: 1px solid white;
-  transition: all 0.55s;
-  box-shadow: 0 1px 5px;
 }
 .hero-Div a {
   color: white;
-}
-
-.newsletter-Section button:hover,
-.hero-Div button:hover {
-  background: #f6becb;
-  border: 1px solid transparent;
-  transform: translateX(8px);
 }
 
 .hero-Img {
@@ -116,7 +100,26 @@ nav {
   transition: all 0.55s;
 }
 
-/* headers */
+/* button shop & Subscription style */
+
+.btn {
+  display: inline-block;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: all 0.55s;
+  box-shadow: 0 1px 5px;
+}
+
+.btn:hover {
+  background: #f6becb;
+  border: 1px solid transparent;
+  padding: 17px 35px;
+}
+
+/* headers product & reviews & newsletter */
 
 #product,
 #reviews,
@@ -138,7 +141,7 @@ nav {
   justify-content: center;
 }
 
-.card-Container .card-Product {
+.card--Product {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -148,14 +151,13 @@ nav {
   font-size: 12px;
   width: 23em;
   align-items: center;
-  box-shadow: 0 5px 10px;
+  box-shadow: 0 0px 10px gray;
 }
 
-.card-Container .card-Product img {
+.card--Product img {
   padding: 0;
   margin: 0 0 15px 0;
   height: 15em;
-  /* width: 15em; */
   border-radius: 20px;
 }
 
@@ -178,13 +180,14 @@ nav {
   color: white;
   background: #f6becb;
   border: 1px solid transparent;
-  transform: translateX(8px);
+  box-shadow: 0 2px 10px black;
+  transform: translateY(5px);
 }
 
 /* Card Container Style */
 /* Reviews */
 
-.card-Container .card-Reviews {
+.card--Reviews {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -194,13 +197,18 @@ nav {
   font-size: 12px;
   width: 23em;
   align-items: center;
-  box-shadow: 0 5px 10px;
+  box-shadow: 0 2px 10px gray;
 }
 
-.card-Container .card-Reviews img {
+.card--Reviews img {
   height: 2em;
   padding: 0;
   margin-bottom: 5px;
+}
+
+/* Card Style*/
+.card:hover {
+  box-shadow: 0 0px 10px black;
 }
 
 /* Newsletter Style */
@@ -226,22 +234,17 @@ nav {
   padding: 10px 15px;
   margin: 8px 0;
   border: 2px solid #f1d5db;
-  box-shadow: 0 2px 10px;
+  box-shadow: 0 0 10px rgb(91, 90, 90);
 }
 
-.newsletter-Section button {
+.newsletter-Section input:focus {
+  box-shadow: 0 4px 10px black;
+}
+
+.btn--Newsletter {
   margin: 2% 40%;
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  background: transparent;
-  border: 1px solid white;
   padding: 12px 20px;
-  line-height: 1.4;
   font-size: 14px;
-  font-weight: 500;
-  border-radius: 30px;
-  transition: all 0.55s;
 }
 
 /* Footer Style */
@@ -250,14 +253,12 @@ footer {
   color: white;
 }
 
-#about h4,
-#contact h4 {
+.head {
   padding: 1%;
   font-size: 0.8rem;
 }
 
-#about p,
-#contact p {
+.para {
   padding-left: 2%;
   font-size: 0.7rem;
 }
