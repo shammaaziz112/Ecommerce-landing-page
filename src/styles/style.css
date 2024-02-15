@@ -65,6 +65,10 @@ body {
   gap: 2rem;
 }
 
+.hero-Div {
+  display: flex;
+  flex-direction: column;
+}
 .hero-Div h1 {
   font-family: 'Genty Demo', sans-serif;
   font-size: 50px;
@@ -73,6 +77,7 @@ body {
   margin: 250px 0 20px 0;
   padding: 0 5%;
   transition: all 0.55s ease;
+  text-shadow: 0 0 3px;
 }
 
 .hero-Div p {
@@ -86,9 +91,8 @@ body {
 }
 
 .btn--hero {
-  margin: 0 40%;
   text-decoration: none;
-  padding: 12px 30px;
+  align-self: center;
   font-size: 16px;
 }
 .hero-Div a {
@@ -103,20 +107,20 @@ body {
 /* button shop & Subscription style */
 
 .btn {
-  display: inline-block;
   color: white;
-  background: transparent;
+  background-color: transparent;
   border: 1px solid white;
   font-weight: 500;
   border-radius: 30px;
-  transition: all 0.55s;
+  padding: 12px 30px;
+  transition: padding 0.55s, background-color 0.55s;
   box-shadow: 0 1px 5px;
 }
 
 .btn:hover {
-  background: #f6becb;
-  border: 1px solid transparent;
-  padding: 17px 35px;
+  background-color: #f6becb;
+  border-color: transparent;
+  padding: 15px 35px;
 }
 
 /* headers product & reviews & newsletter */
@@ -155,7 +159,7 @@ body {
 }
 
 .card--Product img {
-  padding: 0;
+  padding: 10px 0 0 0;
   margin: 0 0 15px 0;
   height: 15em;
   border-radius: 20px;
@@ -165,7 +169,7 @@ body {
   margin: 5% 20%;
   display: inline-block;
   text-decoration: none;
-  background: transparent;
+  background-color: transparent;
   border: 1px solid #dd748d;
   color: #dd748d;
   padding: 10px 20px;
@@ -178,7 +182,7 @@ body {
 
 .card-Container button:hover {
   color: white;
-  background: #f6becb;
+  background-color: #f6becb;
   border: 1px solid transparent;
   box-shadow: 0 2px 10px black;
   transform: translateY(5px);
