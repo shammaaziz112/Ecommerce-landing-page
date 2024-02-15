@@ -7,102 +7,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Genty Demo Font Family -->
     <link href="https://fonts.cdnfonts.com/css/genty-demo" rel="stylesheet" />
-
-    <link rel="stylesheet" href="dist/style.css" />
+    <!-- Montserrat Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./src/styles/style.css" />
     <title>Beauty Bliss</title>
   </head>
   <body>
-    <span><img src="./src/img/logo.png" alt="" height="120px" /></span>
-    <nav>
-      <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#Reviews">Reviews</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <span class="logo"
+          ><img src="./src/img/logo.png" alt="" height="100px"
+        /></span>
+        <ul class="navlist">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <header class="header">
+    <main>
       <section class="hero-Section">
         <div class="hero-Div">
-          <h1 style="font-family: 'Genty Demo', sans-serif">
-            Bring back the beauty and glow of your skin
-          </h1>
+          <h1>Bring back the beauty and glow of your skin</h1>
           <p>
             We provide you various treatments from head to toe using the best
             product, advanced technology, and affordable
           </p>
-          <button><b>SHOP</b></button>
+          <button>
+            <a href="#product"><b>SHOP</b></a>
+          </button>
+        </div>
+        <div class="hero-Img">
+          <img src="./src/img/girl.jpeg" alt="" />
         </div>
       </section>
-    </header>
-    <hr />
-    <main>
-      <section id="Home">
-        <h2>product</h2>
 
+      <h2 id="product">product</h2>
+      <section class="card-Container">
+        <div class="card">
+          <div class="card-Img">
+            <img src="./src/img/Anua_HeartleafSoothingToner_5.jpg.webp" alt="" />
+          </div>
+          <!-- <img src="./src/img/Anua_HeartleafSoothingToner_5.jpg.webp" alt="" /> -->
+          <h4>Heartleaf 77% Soothing Toner</h4>
+          <p>
+            77% Korean-grown Heartleaf extract calms sensitive skin, while pH
+            balancing and hydrating.
+          </p>
+          <button>ADD TO CART</button>
+        </div>
+
+        <div class="card">
+          <img src="./src/img/Anua_PoreCleansingOil_5_1080x.jpg.webp" alt="" />
+          <h4>Heartleaf Pore Control Cleansing Oil</h4>
+          <p>
+            Anua’s Heartleaf Pore Control Cleansing Oil removes impurities and
+            provides hydrating relief to acne-prone skin.
+          </p>
+          <button>ADD TO CART</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="./src/img/Anua_HeartleafSoothingAmpoule_1.jpg.webp"
+            alt=""
+          />
+          <h4>Heartleaf 80% Moisture Soothing Ampoule</h4>
+          <p>
+            The perfect blend of calming heartleaf extract and moisturizing
+            superstars; panthenol, hyaluronic acid and betaine.
+          </p>
+          <button>ADD TO CART</button>
+        </div>
+        <div class="card">
+          <img
+            src="./src/img/Anua_HeartleafSoothingAmpoule_1.jpg.webp"
+            alt=""
+          />
+          <h4>Heartleaf 80% Moisture Soothing Ampoule</h4>
+          <p>
+            The perfect blend of calming heartleaf extract and moisturizing
+            superstars; panthenol, hyaluronic acid and betaine.
+          </p>
+          <button>ADD TO CART</button>
+        </div>
+      </section>
+
+      <h2 id="reviews">Reviews</h2>
+      <section class="card-Container">
+        <div class="card">
+          <h3>Omnia</h3>
+          <p>
+            It felt so good like this was my first time using an Oil cleanser
+            and just perfect 10/10.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Raghad</h3>
+          <p>This toner has calmed my redness and my skin isn’t as dull.</p>
+        </div>
+        <div class="card">
+          <h3>Sarah</h3>
+          <p>
+            I love this moisturizer. I use it for my night time routine and my
+            skin loves it.
+          </p>
+        </div>
+      </section>
+
+      <h2 id="newsletter">Newsletter</h2>
+      <section class="newsletter-Section">
         <div>
-          <div>
-            <img
-              src="./src/img/Anua_HeartleafSoothingToner_5.jpg.webp"
-              alt=""
-              height="200px"
-            />
-            <p><b>Heartleaf 77% Soothing Toner</b></p>
-            <p>
-              77% Korean-grown Heartleaf extract calms sensitive skin, while pH
-              balancing and hydrating. Anua's Heartleaf 77% Soothing Toner is
-              lightweight, ultra-soothing, and free of fillers or harmful
-              chemicals. Non-comedogenic, it's safe for acne-prone skin.
-            </p>
-            <button>ADD TO CART</button>
-          </div>
-          <div>
-            <img
-              src="./src/img/Anua_PoreCleansingOil_5_1080x.jpg.webp"
-              alt=""
-              height="200px"
-            />
-            <p><b>Heartleaf Pore Control Cleansing Oil</b></p>
-            <p>
-              Anua’s Heartleaf Pore Control Cleansing Oil removes impurities and
-              provides hydrating relief to acne-prone skin. Heartleaf extract
-              helps soothe and prevent irritation for cleansed, clear skin.
-            </p>
-            <button>ADD TO CART</button>
-          </div>
+          <p>
+            Sign up to Beauty Bliss Skincare's email newsletter and be first to
+            hear of our new products, promotions, tips on how best to use our
+            products and more.
+          </p>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+            <br />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <br />
+
+            <button type="submit">Subscription</button>
+          </form>
         </div>
-      </section>
-
-      <section id="Reviews">
-        <h2>Reviews</h2>
-        <div>
-          <div>
-            <h3>Omnia</h3>
-            <p>
-              It felt so good like this was my first time using an Oil cleanser
-              and just perfect 10/10.
-            </p>
-          </div>
-          <div>
-            <h3>Raghad</h3>
-            <p>This toner has calmed my redness and my skin isn’t as dull.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="Newsletter">
-        <form>
-          <label for="newsletter">Newsletter</label>
-          <input type="email" id="newsletter" name="newsletter" />
-
-          <button type="submit">Subscription</button>
-        </form>
       </section>
     </main>
 
     <footer>
-      <section id="About">
+      <section id="about">
         <h4>About</h4>
         <p>
           Beauty Bliss is proud to offer a range of independent, and
@@ -114,9 +160,10 @@
         </p>
       </section>
 
-      <section id="Contact">
+      <section id="contact">
         <h4>Contact</h4>
-        <p>Please email us at hello@ohlolly.com for questions or comments</p>
+        <p>Please email us at hello@B&B.com for questions or comments</p>
+        <br />
       </section>
     </footer>
   </body>
