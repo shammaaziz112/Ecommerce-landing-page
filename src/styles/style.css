@@ -11,11 +11,12 @@
 
 body {
   background: linear-gradient(
-    245.59deg,
-    #f1d5db 0%,
-    #e19fae 28.5%,
-    #dd748d 75.52%
-  );
+      245.59deg,
+      #f1d5db 0%,
+      #e19fae 28.5%,
+      #dd748d 75.52%
+    )
+    no-repeat;
 }
 
 /* Navigation Bar Style */
@@ -34,12 +35,12 @@ body {
 }
 
 .navigation--logo {
-  margin: -40px;
   display: flex;
+  margin: -2.4em;
 }
 
 .navigation--logo img {
-  height: 120px;
+  height: 7em;
 }
 
 .navigation--list {
@@ -59,11 +60,19 @@ body {
   text-decoration: underline;
 }
 
+#menu-icon {
+  color: white;
+  font-size: 30px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
 /* Hero Section */
-.hero-Section {
+.hero-section {
   height: 100%;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -71,27 +80,27 @@ body {
   color: white;
 }
 
-.hero-Div {
+.hero-div {
   display: flex;
   flex-direction: column;
 }
-.hero-Div h1 {
+.hero-div h1 {
   font-family: 'Genty Demo', sans-serif;
   font-size: 50px;
   line-height: 1;
-  margin: 250px 0 20px 0;
-  padding: 0 5%;
+  margin: 220px 0 20px 0;
+  padding: 0 0 0 15%;
   transition: all 0.55s ease;
   text-shadow: 0 0 3px;
 }
 
-.hero-Div p {
+.hero-div p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   font-weight: 600;
   line-height: 1.9;
   margin-bottom: 40px;
-  padding: 0 10%;
+  padding: 0 0 0 20%;
 }
 
 .btn--hero {
@@ -99,13 +108,15 @@ body {
   align-self: center;
   font-size: 16px;
 }
-.hero-Div a {
+.hero-div a {
   color: white;
 }
 
-.hero-Img {
-  margin: 0 0 0 20%;
-  transition: all 0.55s;
+.hero-img {
+  background-image: url(/src/img/girl.jpeg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
 }
 
 /* button shop & Subscription style */
@@ -143,7 +154,7 @@ body {
 /* Card Container Style */
 /* Product */
 
-.card-Container {
+.card-container {
   margin-top: 2%;
   display: flex;
   text-align: center;
@@ -152,7 +163,7 @@ body {
   flex-wrap: wrap;
 }
 
-.card--Product {
+.card--product {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -160,19 +171,20 @@ body {
   padding: 0 15px;
   border-radius: 1.5rem;
   font-size: 12px;
-  width: 23em;
+  width: 25em;
+  height: 32em;
   align-items: center;
   box-shadow: 0 0px 10px gray;
 }
 
-.card--Product img {
+.card--product img {
   padding: 10px 0 0 0;
   margin: 0 0 15px 0;
   height: 15em;
   border-radius: 20px;
 }
 
-.card-Container button {
+.card-container button {
   margin: 5% 20%;
   display: inline-block;
   text-decoration: none;
@@ -187,7 +199,7 @@ body {
   transition: all 0.55s;
 }
 
-.card-Container button:hover {
+.card-container button:hover {
   color: white;
   background-color: #f6becb;
   border: 1px solid transparent;
@@ -198,7 +210,7 @@ body {
 /* Card Container Style */
 /* Reviews */
 
-.card--Reviews {
+.card--reviews {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -211,7 +223,7 @@ body {
   box-shadow: 0 2px 10px gray;
 }
 
-.card--Reviews img {
+.card--reviews img {
   height: 2em;
   padding: 0;
   margin-bottom: 5px;
@@ -224,23 +236,24 @@ body {
 
 /* Newsletter Style */
 
-.newsletter-Section {
+.newsletter-section {
   text-align: center;
   margin: 0% 5%;
   line-height: 1.8;
   color: white;
 }
 
-.newsletter-Section p {
+.newsletter-section h3 {
   margin-bottom: 20px;
+  font-size: 1rem;
 }
 
-.newsletter-Section label {
+.newsletter-section label {
   margin: 3px 5px;
   font-weight: 600;
 }
 
-.newsletter-Section input {
+.newsletter-section input {
   border-radius: 10px;
   width: 30%;
   padding: 10px 15px;
@@ -251,11 +264,11 @@ body {
   outline: none;
 }
 
-.newsletter-Section input:focus {
+.newsletter-section input:focus {
   box-shadow: 0 4px 10px black;
 }
 
-.btn--Newsletter {
+.btn--newsletter {
   margin: 2% 40%;
   padding: 12px 20px;
   font-size: 14px;
@@ -275,4 +288,184 @@ footer {
 .para {
   padding-left: 2%;
   font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  /* Navigation*/
+
+  .navigation {
+    padding: 23px 5%;
+  }
+
+  .navigation--logo img {
+    margin-left: 15px;
+    height: 5em;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+  .navigation--list {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 200px;
+    height: 65vh;
+    background-color: rgb(225, 159, 174, 0.6);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+    transition: all 0.55 ease;
+  }
+  .navigation--list a {
+    display: block;
+    margin: 10px 0;
+  }
+  .navigation--list.open {
+    right: 0;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    min-height: 43vh;
+    margin-bottom: 50px;
+  }
+
+  .hero-div h1 {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+
+  .hero-div p {
+    font-size: 0.7em;
+    font-weight: 500;
+    margin-bottom: 13px;
+  }
+
+  .btn--hero {
+    font-size: 11px;
+    margin-left: 30px;
+  }
+
+  .hero-img {
+    background-size: contain;
+  }
+
+  /* headers product & reviews & newsletter */
+
+  #product,
+  #reviews,
+  #newsletter {
+    font-size: 2.2rem;
+  }
+
+  .card--product {
+    font-size: 10px;
+    height: 33em;
+  }
+
+  .card--reviews {
+    font-size: 10px;
+    width: 30em;
+  }
+
+  .newsletter-section h3 {
+    font-size: 0.8rem;
+  }
+
+  .newsletter-section label {
+    font-weight: 500;
+  }
+
+  .newsletter-section input {
+    border-radius: 10px;
+    width: 50%;
+  }
+
+  .head {
+    font-size: 0.7rem;
+  }
+
+  .para {
+    font-size: 0.6rem;
+  }
+}
+
+/* Smaller Devices*/
+@media (max-width: 600px) {
+  /* Navigation*/
+
+  .navigation {
+    padding: 12px 5%;
+  }
+
+  .navigation--logo img {
+    /* margin-left: 15px; */
+    height: 4em;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    min-height: 43vh;
+    margin-bottom: 50px;
+  }
+
+  .hero-div h1 {
+    font-size: 30px;
+    margin-top: 100px;
+    padding-left: 30px;
+  }
+
+  .hero-div p {
+    font-size: 0.7em;
+    font-weight: 500;
+    margin-bottom: 13px;
+    padding-left: 30px;
+  }
+
+  .btn--hero {
+    font-size: 11px;
+    margin-left: 10px;
+  }
+
+  .hero-img {
+    background-image: none;
+  }
+
+  .hero-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* headers product & reviews & newsletter */
+
+  #product,
+  #reviews,
+  #newsletter {
+    font-size: 2rem;
+  }
+
+  .newsletter-section h3 {
+    font-size: 0.6rem;
+  }
+
+  .newsletter-section label {
+    font-weight: 500;
+  }
+
+  .newsletter-section input {
+    border-radius: 10px;
+    width: 50%;
+  }
+
+  .head {
+    font-size: 0.6rem;
+  }
+
+  .para {
+    font-size: 0.5rem;
+  }
+  .btn--newsletter {
+    margin-left: 160px;
+  }
 }

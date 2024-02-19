@@ -14,6 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!--Boxicons-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
     <!-- Style Sheet -->
     <link rel="stylesheet" href="./src/styles/style.css" />
     <title>Beauty Bliss</title>
@@ -22,21 +27,23 @@
     <header>
       <nav class="navigation">
         <span class="navigation--logo"
-          ><img src="./src/img/logo.png" alt=""
+          ><img src="./src/img/logo.png" alt="Beauty Bliss Logo"
         /></span>
         <ul class="navigation--list">
           <li><a href="./index.html">Home</a></li>
-          <li><a href="#before-Reviews">Reviews</a></li>
+          <li><a href="#before-reviews">Reviews</a></li>
           <li><a href="#newsletter">Newsletter</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
       </nav>
     </header>
 
     <main>
-      <section class="hero-Section">
-        <div class="hero-Div">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-div">
           <h1>Bring back the beauty and glow of your skin</h1>
           <p>
             Welcome to Beauty Bliss. For over 24 years we have been your number
@@ -47,82 +54,90 @@
             orders over $30.
           </p>
 
-          <a class="btn btn--hero" href="#before-Product">SHOP</a>
+          <a class="btn btn--hero" href="#product" aria-label="go to product"
+            >SHOP</a
+          >
         </div>
-        <div class="hero-Img">
-          <img src="./src/img/girl.jpeg" alt="" />
-          <div id="before-Product"></div>
+        <div class="hero-img">
+          <!-- image background /> -->
         </div>
       </section>
 
-      <h2 id="product">product</h2>
-      <section class="card-Container">
-        <div class="card card--Product">
-          <img src="./src/img/Anua_HeartleafSoothingToner_5.jpg.webp" alt="" />
-          <h4>Heartleaf 77% Soothing Toner</h4>
+      <!-- Product Section -->
+      <h2 id="product">Product</h2>
+      <section class="card-container">
+        <div class="card card--product">
+          <img
+            src="./src/img/Anua_HeartleafSoothingToner_5.jpg.webp"
+            alt="Heartleaf Soothing Toner"
+          />
+          <h3>Heartleaf 77% Soothing Toner</h3>
           <p>
             77% Korean-grown Heartleaf extract calms sensitive skin, while pH
             balancing and hydrating.
           </p>
-          <button>ADD TO CART</button>
+          <button aria-label="add Toner to cart">ADD TO CART</button>
         </div>
 
-        <div class="card card--Product">
-          <img src="./src/img/Anua_PoreCleansingOil_5_1080x.jpg.webp" alt="" />
-          <h4>Heartleaf Pore Control Cleansing Oil</h4>
+        <div class="card card--product">
+          <img
+            src="./src/img/Anua_PoreCleansingOil_5_1080x.jpg.webp"
+            alt="Pore Cleansing Oil"
+          />
+          <h3>Heartleaf Pore Control Cleansing Oil</h3>
           <p>
             Anua’s Heartleaf Pore Control Cleansing Oil removes impurities and
             provides hydrating relief to acne-prone skin.
           </p>
-          <button>ADD TO CART</button>
+          <button aria-label="add Cleansing to cart">ADD TO CART</button>
         </div>
 
-        <div class="card card--Product">
+        <div class="card card--product">
           <img
             src="./src/img/Anua_HeartleafSoothingAmpoule_1.jpg.webp"
-            alt=""
+            alt="Heartleaf Soothing Ampoule"
           />
-          <h4>Heartleaf 80% Moisture Soothing Ampoule</h4>
+          <h3>Heartleaf 80% Moisture Soothing Ampoule</h3>
           <p>
             The perfect blend of calming heartleaf extract and moisturizing
             superstars; panthenol, hyaluronic acid and betaine.
           </p>
-          <button>ADD TO CART</button>
+          <button aria-label="add Ampoule to cart">ADD TO CART</button>
         </div>
-        <div class="card card--Product">
+        <div class="card card--product">
           <img
             src="./src/img/Ohlolly-Cosrx-Advanced-Snail-96-Mucin-Power-Essence.jpg.webp"
-            alt=""
+            alt="Cosrx-Advanced Snail 96 Mucin Power Essence"
           />
-          <h4>Advanced Snail 96 Mucin Power Essence</h4>
+          <h3>Advanced Snail 96 Mucin Power Essence</h3>
           <p>
             Advanced Snail 96 Mucin Power Essence hydrates the skin on a
             cellular level and promotes healthier skin without heaviness or
             irritation.
           </p>
-          <button>ADD TO CART</button>
+          <button aria-label="add Essence to cart">ADD TO CART</button>
         </div>
-        <div id="before-Reviews"></div>
+        <div id="before-reviews"></div>
       </section>
 
       <h2 id="reviews">Customer Reviews</h2>
-      <section class="card-Container">
-        <div class="card card--Reviews">
+      <section class="card-container">
+        <div class="card card--reviews">
           <h3>Omnia</h3>
-          <img src="./src/img/rating.png" alt="" />
+          <img src="./src/img/rating.png" alt="user rating" />
           <p>
             It felt so good like this was my first time using an Oil cleanser
             and just perfect 10/10.
           </p>
         </div>
-        <div class="card card--Reviews">
+        <div class="card card--reviews">
           <h3>Raghad</h3>
-          <img src="./src/img/rating.png" alt="" />
+          <img src="./src/img/rating.png" alt="user rating" />
           <p>This toner has calmed my redness and my skin isn’t as dull.</p>
         </div>
-        <div class="card card--Reviews">
+        <div class="card card--reviews">
           <h3>Sarah</h3>
-          <img src="./src/img/rating.png" alt="" />
+          <img src="./src/img/rating.png" alt="user rating" />
           <p>
             I love this moisturizer. I use it for my night time routine and my
             skin loves it.
@@ -131,13 +146,13 @@
       </section>
 
       <h2 id="newsletter">Newsletter</h2>
-      <section class="newsletter-Section">
+      <section class="newsletter-section">
         <div>
-          <p>
+          <h3>
             Sign up to Beauty Bliss Skincare's email newsletter and be first to
             hear of our new products, <br />promotions, tips on how best to use
             our products and more.
-          </p>
+          </h3>
           <form>
             <label for="name">Name</label><br />
             <input type="text" id="name" name="name" />
@@ -147,7 +162,11 @@
             <input type="email" id="email" name="email" />
             <br />
 
-            <button class="btn btn--Newsletter" type="submit">
+            <button
+              class="btn btn--newsletter"
+              type="submit"
+              aria-label="subscription to newsletter"
+            >
               Subscription
             </button>
           </form>
@@ -157,8 +176,8 @@
 
     <footer>
       <section id="about">
-        <h4 class="head h--About">About</h4>
-        <p class="para p--About">
+        <h4 class="head h--about">About</h4>
+        <p class="para p--about">
           Beauty Bliss is proud to offer a range of independent, and
           results-driven brands that prioritize clean, organic, and
           vegan-friendly <br />
@@ -169,12 +188,15 @@
       </section>
 
       <section id="contact">
-        <h4 class="head h-Contact">Contact</h4>
-        <p class="para p--Contact">
+        <h4 class="head h-contact">Contact</h4>
+        <p class="para p--contact">
           Please email us at hello@B&B.com for questions or comments
         </p>
         <br />
       </section>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="./src/scripts/script.js"></script>
   </body>
 </html>
