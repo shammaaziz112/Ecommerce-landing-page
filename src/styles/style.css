@@ -278,16 +278,26 @@ body {
 footer {
   background-color: rgb(225, 159, 174, 0.6);
   color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  padding: 20px;
 }
 
-.head {
-  padding: 1%;
+#contact {
+  flex: 0;
+}
+
+#about {
+  flex: 3;
+  text-align: center;
   font-size: 0.8rem;
 }
 
-.para {
-  padding-left: 2%;
-  font-size: 0.7rem;
+#contact i {
+  color: white;
+  font-size: 30px;
+  margin-right: 10px;
 }
 
 @media (max-width: 768px) {
